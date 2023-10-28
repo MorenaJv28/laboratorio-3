@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using laboratorio3.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +10,7 @@ namespace laboratorio3.Data
 {
     public class AsignaturaContext : DbContext
     {
-        public DbSet<AsignaturaContext> Asignatura { get; set; }
+        public DbSet<asignaturas> asignaturas { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

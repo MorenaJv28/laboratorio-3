@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace laboratorio3.Models
 {
-    public class ModelsAsignatura
+    public class asignaturas
     {
         public int id { get; set; }
         public string? nombre { get; set; }
         public int unidades_valorativas { get; set; }
-        public int ciclo { get; set; }
+        public string? ciclo { get; set; }
         public int inscritos { get; set; }
+
     }
 }
